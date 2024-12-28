@@ -1,0 +1,1 @@
+ALTER TABLE products MODIFY id bigint AUTO_INCREMENT;

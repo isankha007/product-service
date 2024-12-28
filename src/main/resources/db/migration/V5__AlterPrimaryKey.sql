@@ -1,0 +1,1 @@
+ALTER TABLE products MODIFY id binary(16) NOT NULL;
