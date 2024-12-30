@@ -16,7 +16,6 @@ import org.springframework.web.client.RestTemplate;
 
 import static com.sankha.productService.config.AppConstants.FAILED;
 
-
 @Service
 @RequiredArgsConstructor
 public class SecurityService {

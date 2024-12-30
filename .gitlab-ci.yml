@@ -3,6 +3,10 @@ stages:
   - analysis
   - build
 
+static_code_analysis:
+  stage: analysis
+  script: ./gradlew checkstyleMain
+
 unit_tests:
   #  before_script:
   #    - brew install openjdk@17
@@ -11,10 +15,6 @@ unit_tests:
   artifacts:
     reports:
       junit: build/test-results/test/TEST-*.xml
-
-static_code_analysis:
-  stage: analysis
-  script: ./gradlew checkstyleMain
 
 create_build:
   #  before_script:

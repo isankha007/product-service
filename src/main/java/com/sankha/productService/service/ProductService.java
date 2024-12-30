@@ -12,7 +12,7 @@ public class ProductService {
     private final ProductRepository productRepository;
 
     public void create(ProductRequest productRequest, String username, String token) {
-        Product product=getProductFromRequest(productRequest);
+        Product product = getProductFromRequest(productRequest);
         productRepository.save(product);
     }
 
