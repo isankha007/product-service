@@ -3,6 +3,7 @@ package com.sankha.productService.controllers;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sankha.productService.dto.ProductRequest;
 import com.sankha.productService.service.ProductService;
+import com.sankha.productService.service.SecurityService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -35,6 +36,9 @@ class ProductControllerTest {
 
     @Autowired
     ObjectMapper objectMapper;
+
+    @MockBean
+    SecurityService securityService;
 
     @Autowired
     private WebApplicationContext context;
